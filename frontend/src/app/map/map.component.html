@@ -1,0 +1,92 @@
+<div id="container">
+  <div id="button_back" (click)="back()">
+    <img src="../../assets/helmie/back.png" id="back">
+  </div>
+  <div id="maps">
+    <google-map
+      height="996px"
+      width="500px"
+      [center]="center"
+      [zoom]="zoom"
+      [options]="options"
+      (mapClick)="addMarker($event)"
+      #map>
+
+      <!--Origin-->
+      <map-marker
+      [position]="center"
+      [options]="optionsMarker"
+      [clickable]=true
+      (mapClick)="originInformations()"
+      #original
+      >
+      </map-marker>
+
+      <!--Destination-->
+      <map-marker *ngFor="let marker of markers">
+      </map-marker>
+    </google-map>
+
+    <!--Refocus-->
+    <div id="refocusing" (click)="centerToOrigin()" *ngIf="refocus" >
+      <fa-icon [icon]="faArrowsToCircle" id="refocus_icon"></fa-icon>
+      <div id="refocus_text">Refocus</div>
+    </div>
+    <!--Origin Information-->
+    <div id="informations" *ngIf="originInformation">
+      <div id="image">
+        <img src="../../assets/helmie/motori.png" id="image_loc">
+      </div>
+      <div id="textes">
+        <div id="basic_text">My motorcycle</div>
+        <div id="under_text">Konstantinidi 18, Heraklion</div>
+      </div>
+      <div id="close" (click)="closeOriginInformations()">
+        <img src="../../assets/helmie/close.png">
+      </div>
+    </div>
+
+    <!--Destination Information-->
+    <div id="informations" *ngIf="destinationInformation">
+      <div id="image">
+        <img src="../../assets/helmie/route.png" id="image_loc" style="margin-top: 23px;">
+      </div>
+      <div id="three_textes">
+        <div id="streeter">
+          <div id="texter">
+            {{street}}
+          </div>
+        </div>
+        <div id="infos">
+          <div id="route">
+            <fa-icon [icon]="faRoute" id="icon_route"></fa-icon>
+            <div id="text_route">1.5 km</div>
+          </div>
+
+          <div id="time">
+            <fa-icon [icon]="faClock" id="icon_route"></fa-icon>
+            <div id="text_route">5 min</div>
+          </div>
+        </div>
+        <div id="buttons">
+          <div id="start">
+            <div id="start_text">
+              Start
+              <fa-icon [icon]="faLocationArrow" id="location_icon"></fa-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="add_custom">
+        <div id="plus_margin">
+          <fa-icon [icon]="faPlus" id="plus_icon"></fa-icon>
+        </div>
+      </div>
+      <div id="close" (click)="closeDestinationInformations()">
+        <img src="../../assets/helmie/close.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+

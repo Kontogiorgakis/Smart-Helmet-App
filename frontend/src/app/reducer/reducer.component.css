@@ -1,0 +1,149 @@
+#container{
+  background-color: #040213;
+  opacity: 90%;
+  width: 414px;
+  height: 896px;
+  border-radius: 30px;
+
+  text-align: center;
+}
+
+#helmie{
+  margin-top: 20px;
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  padding-bottom: 60px;
+
+  font-size: 32px;
+  color: white;
+
+}
+
+/*Triangles*/
+.triangle {
+  z-index: -1;
+	position: absolute;
+	text-align: left;
+  left: 40.2%;
+  top: -25%;
+  transform-origin: bottom center;
+  animation: wave 1.8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+.triangle:before,
+.triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+	width:  10em;
+	height: 10em;
+	border-top-right-radius: 60%;
+  background-image: linear-gradient(to right, #AC00A5
+  , #2D002B
+  );
+}
+
+.triangle {
+	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+}
+.triangle:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.triangle:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-60deg) skewX(-30deg) scale(1,.866) translateY(0);
+  }
+  50% {
+    transform: rotate(-60deg) skewX(-30deg) scale(1,.866) translateY(-25px);
+  }
+  100% {
+    transform: rotate(-60deg) skewX(-30deg) scale(1,.866) translateY(0);
+  }
+}
+
+#hololens{
+  opacity: 35%;
+  margin-top: 110px;
+  position: relative;
+  z-index: -1;
+}
+
+#moto{
+  margin-top: 79px;
+}
+
+#moto_text{
+  display: inline-block;
+  width: 340px;
+  height: 112px;
+  margin-top:55px;
+
+  color: white;
+  font-size: 32px;
+}
+
+#pairing{
+  display: none;
+  position: absolute;
+  margin-top: 55px;
+  color: white;
+  font-size: 21px;
+  left: 35%;
+}
+
+
+
+#lens {
+  border-radius: 100px;
+  padding-top: 6.5px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+
+
+.spin {
+  z-index: -1;
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 37%;
+  margin: auto;
+  width: 11em;
+  height: 11em;
+  border-radius: 70%;
+  border: 4px solid transparent;
+  border-top-color: #FFFFFF;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #FFFFFF;
+  }
+  25% {
+    border-top-color: #FF72F9;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #DA02D1;
+  }
+  75% {
+    border-top-color: #AC00A5;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: #2D002B;
+  }
+}

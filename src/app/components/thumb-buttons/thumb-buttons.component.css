@@ -1,0 +1,116 @@
+/*Thumb buttons*/
+
+/*thumb button panel*/
+#thumb_buttons{
+    position: absolute;
+    width: 375px;
+    height: 104px;
+    left: 0px;
+    top: 708px;
+
+    background: #594545;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+/*Home Button*/
+#home_button{
+    position: absolute;
+    width: 118px;
+    height: 104px;
+    left: -1px;
+    top: 0px;
+    background: #594545;
+    border-radius: 20px 20px 20px 0px;
+}
+#home_text{
+    position: absolute;
+    width: 118px;
+    height: 38px;
+    left: 0px;
+    top: 66px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+/*List Button*/
+#list_button{
+    position: absolute;
+    width: 118px;
+    height: 104px;
+    left: 129px;
+    top: 0px;
+    border-radius: 20px 20px 20px 20px;
+    background: #594545;
+}
+
+#thumb_icons{
+    font-size: 40px;
+    position: absolute;
+    left: 37px;
+    top: 13px;
+    color: white;
+}
+
+#list{
+    font-size: 40px;
+    position: absolute;
+    left: 42px;
+    top: 13px;
+    color: white;
+}
+
+#list_text{
+    position: absolute;
+    width: 118px;
+    height: 38px;
+    left: 0px;
+    top: 66px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+/*Extras Button*/
+#extras_button{
+    position: absolute;
+    width: 117px;
+    height: 104px;
+    left: 258px;
+    top: 0px;
+    background: #594545;
+    border-radius: 20px 20px 0px 20px;
+}
+
+#extras_text{
+    position: absolute;
+    width: 117px;
+    height: 38px;
+    left: 0px;
+    top: 66px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}

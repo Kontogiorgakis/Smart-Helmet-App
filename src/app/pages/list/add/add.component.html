@@ -1,0 +1,97 @@
+<!--Add an Item-->
+<!--Stores-->
+<div id="showing" *ngIf="show">
+    <div id="market">
+        <div id="marketName" style="font-size:24px; color:black">Any</div>
+        <fa-icon [icon]="faMinus" id="empty"></fa-icon>
+    </div>
+    <div id="market" (click)="selectShop()">
+        <div id="marketName">Σκλαβενίτης</div>
+        <div id="marketPrice">10,25€</div>
+    </div>   
+    <div id="market">
+        <div id="marketName">Bazzar</div>
+        <div id="marketPrice">10,49€</div>
+    </div> 
+    <div id="market">
+        <div id="marketName">Βασιλλόπουλος</div>
+        <div id="marketPrice">11,00€</div>
+    </div>   
+    <div id="market">
+        <div id="marketName">Χαλκιαδάκης</div>
+        <div id="marketPrice">11,20€</div>
+    </div>    
+    <div id="market">
+        <div id="marketName">Κρητικός</div>
+        <div id="marketPrice">11,25€</div>
+    </div>      
+</div>
+<div id="adding"> 
+    <div id="add_text">Add Item</div>
+
+    <!--Kind of Item-->
+    <div id="kind">
+        <div id="edible">Edible</div>
+        <div id="potable">Potable</div>
+        <div id="other">Other</div>
+    </div>
+
+    <!--informations-->
+    <div id="informations">
+        <div id="namerow" (click)="nameShow()">
+            <div id="name">Name:</div>
+            <input type="text" id="search_bar" placeholder="Name">
+        </div>
+        
+        <div class="dashes" style="opacity: 1;" id="dash1"></div>
+
+        <div id="quantity" (click)="quantityShow()">
+            <div id="quantity_text">Quantity:</div>
+            <fa-icon [icon]="faCircle" id="dot"></fa-icon>
+            <fa-icon [icon]="faCircle" id="dot" style="top:95px;"></fa-icon>
+            <div id="kilograms">Kilograms:</div>
+            <div id="pieces">Pieces:</div>
+
+            <!--numberinput for KILOGRAMS-->
+            <div class="number" id="no1">
+                <span class="minus" style="line-height: 16px;">-</span>
+                <input type="text" value="1.360" id="kiloinput"/>
+                <span class="plus">+</span>
+            </div>
+
+            <!--numberinput for pieces-->
+            <div class="number" style="top:82px" id="no2">
+                <span class="minus" style="line-height: 16px;">-</span>
+                <input type="text" value="5" id="kiloinput"/>
+                <span class="plus">+</span>
+            </div>
+            <div class="dashes" id="dash2"></div>
+        </div>
+        <!--Price and Status-->
+        <div id="price_status" (click)="priceShow()">
+            <div id="approx">Price Approx:<div id="price"><fa-icon [icon]="faMinus" id="line"></fa-icon></div></div>
+            <div id="from">Buy from:</div>
+            <div id="shops" (click)="showStores()">Any</div>
+
+
+            
+            <div id="status">Status:
+                <div id="places">
+                    <img src="../../../../assets/status/fridge.svg" id="fridge">
+                    <img src="../../../../assets/status/cupboard.svg" id="cabinet">
+                    <img src="../../../../assets/status/bathroom.svg" id="bathroom">
+                </div>
+            </div>
+        </div>
+
+        <!--Add item-->
+        <div id="addit" (click)="addItem()">
+            <div id="addit_text">Add Item</div>
+            <fa-icon [icon]="faChevronRight" id="right"></fa-icon>
+        </div>
+
+    </div>
+
+
+
+</div>

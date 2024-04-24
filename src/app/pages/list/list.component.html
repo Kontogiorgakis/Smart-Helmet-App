@@ -1,0 +1,133 @@
+<div id="list_frame">
+    <div id="title">My List</div>
+    <div id="total_items">5 Items Total</div>
+
+    <!--Here goes the items-->
+    <div id="listing">
+        <div id="item">
+            <!--Left Side-->
+            <div id="item_title">Apples</div>
+            <div id="item_status">Placed inside fridge</div>
+
+            <!--Right Side-->
+            <div id="square" (click)="status()"></div>
+            <fa-icon [icon]="faB" id="store" *ngIf="buy" (click)="status()"></fa-icon>
+            <fa-icon [icon]="faCheck" id="check" *ngIf="checked"></fa-icon>
+            <fa-icon [icon]="faChevronDown" id="down" (click)="toggle()" *ngIf="down"></fa-icon>
+            <fa-icon [icon]="faChevronUp" id="down" (click)="toggle()" *ngIf="up"></fa-icon>
+            <div id="date">Nov 23, 2022, 4:18</div>
+            <hr/>
+        </div>
+
+        <!--Static component of item informations-->
+        <div id="informations" *ngIf="infos">
+            <div id="irow">
+                <div id="nfirst">Name:</div>
+                <div id="nsecond">Apples</div>
+            </div>
+            <div id="irow">
+                <div id="nfirst">Quantity:</div>
+                <div id="nsecond">2kg</div>
+            </div>
+            <div id="irow">
+                <div id="nfirst">Approx.Price:</div>
+                <div id="nsecond">3€</div>
+            </div>
+            <div id="irow">
+                <div id="nfirst">Bought From:</div>
+                <div id="nsecond">Σκλαβενίτης</div>
+            </div>
+            <div id="irow">
+                <div id="nfirst">Status:</div>
+                <div id="nsecond">Inside Fridge</div>
+            </div>
+            <fa-icon [icon]="faTrashCan" id="bin"></fa-icon>
+            <fa-icon [icon]="faHeart" id="heart"></fa-icon>
+        </div>
+
+        <div id="item">
+            <!--Left Side-->
+            <div id="item_title">Potatoes</div>
+            <div id="item_status">Placed inside fridge</div>
+
+            <!--Right Side-->
+            <div id="square"></div>
+            <fa-icon [icon]="faCheck" id="check"></fa-icon>
+            <fa-icon [icon]="faChevronDown" id="down"></fa-icon>
+            <div id="date">Nov 23, 2022, 4:18</div>
+            <hr/>
+        </div>
+
+        <div id="item">
+            <!--Left Side-->
+            <div id="item_title">Cheese</div>
+            <div id="item_status">Placed inside fridge</div>
+
+            <!--Right Side-->
+            <div id="square"></div>
+            <fa-icon [icon]="faCheck" id="check"></fa-icon>
+            <fa-icon [icon]="faChevronDown" id="down"></fa-icon>
+            <div id="date">Nov 23, 2022, 4:18</div>
+            <hr/>
+        </div>
+
+        <div id="item">
+            <!--Left Side-->
+            <div id="item_title">Toothpaste</div>
+            <div id="item_status">Placed inside fridge</div>
+
+            <!--Right Side-->
+            <div id="square"></div>
+            <fa-icon [icon]="faCheck" id="check"></fa-icon>
+            <fa-icon [icon]="faChevronDown" id="down"></fa-icon>
+            <div id="date">Nov 23, 2022, 4:18</div>
+            <hr/>
+        </div>
+
+        <div id="item">
+            <!--Left Side-->
+            <div id="item_title">Coca Cola</div>
+            <div id="item_status">Placed inside fridge</div>
+
+            <!--Right Side-->
+            <div id="square"></div>
+            <fa-icon [icon]="faCheck" id="check"></fa-icon>
+            <fa-icon [icon]="faChevronDown" id="down"></fa-icon>
+            <div id="date">Nov 23, 2022, 4:18</div>
+            <hr/>
+        </div>
+    </div>
+
+    <!--Filters and add-->
+    <div id="filtersAdd">
+        <div id="filters">
+            <div id="category">
+                <div class="category_square" (click)="selected('all')">
+                    <fa-icon [icon]="faCircle" class="circle" *ngIf="all"></fa-icon>
+                </div>
+                <div id="category_text" style="left: 6px;">All</div>
+            </div>
+            <div id="category" style="left: 65px;">
+                <div class="category_square" id="bought" (click)="selected('bought')">
+                    <fa-icon [icon]="faCircle" class="circle" *ngIf="bought"></fa-icon>
+                </div>
+                <div id="category_text" style="left: -6px; font-size: 14px;">Bought</div>
+            </div>
+            <div id="category" style="left: 130px;">
+                <div class="category_square" id="stored" (click)="selected('stored')">
+                    <fa-icon [icon]="faCircle" class="circle" *ngIf="stored"></fa-icon>
+                </div>
+                <div id="category_text" style="left: -5px; font-size: 14px;">Stored</div>
+            </div>
+            <div id="category" style="left: 195px;">
+                <div class="category_square" id="not" (click)="selected('not')">
+                    <fa-icon [icon]="faCircle" class="circle" *ngIf="not"></fa-icon>
+                </div>
+                <div id="category_text" style="left: -12px; top: 39px; font-size: 14px;">Not Bought</div>
+            </div>
+        </div>
+        <div id="add" (click)="addItem()">
+            <fa-icon [icon]="faPlus" id="cross"></fa-icon>
+        </div>
+    </div>
+</div>

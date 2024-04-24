@@ -1,0 +1,271 @@
+#recipe{
+    position: absolute;
+    width: 375px;
+    height: 651px;
+    left: 0px;
+    top: 57px;
+}
+
+#frameImage{
+    position: absolute;
+    width: 375px;
+    height: 197px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+}
+
+#image{
+    position: absolute;
+    width: 339px;
+    height: 184px;
+    left: 18px;
+    top: 13px;
+    filter: brightness(85%);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+/*rest*/
+#rest{
+    position: absolute;
+    width: 375px;
+    height: 454px;
+    left: 0px;
+    top: 197px;
+}
+
+#title{
+    position: absolute;
+    width: 272px;
+    height: 24px;
+    left: 32px;
+    top: 20px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgb(168, 168, 168);
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#informations{
+    position: absolute;
+    width: 375px;
+    height: 61px;
+    left: 0px;
+    top: 63px;
+}
+
+#frameInfo{
+    position: absolute;
+    width: 70px;
+    height: 61px;
+    left: 18px;
+    top: 0px;
+
+    background: #FFF8EA;
+}
+
+#number{
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    left: 14px;
+    top: 15px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #343333;
+}
+
+#subtext{
+    position: absolute;
+    width: 35px;
+    height: 9px;
+    left: 17px;
+    top: 40px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#tags{
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    left: 0px;
+    top: 131px;
+}
+
+#tagText{
+    position: absolute;
+    width: 72px;
+    height: 21px;
+    left: 33px;
+    top: 11px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#face{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+}
+
+#ingredients{
+    position: absolute;
+    width: 375px;
+    height: 270px;
+    left: 0px;
+    top: 181px;
+}
+
+#ingredientsText{
+    position: absolute;
+    width: 108px;
+    height: 24px;
+    left: 18px;
+    top: 5px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+#items{
+    position: absolute;
+    height: 18px;
+    left: 225px;
+    top: 10px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #8A8A8A;
+}
+
+#list{
+    position: absolute;
+    width: 335px;
+    height: 210px;
+    left: 16px;
+    top: 56px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#ingrImage{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+}
+
+#row{
+    margin-bottom: 15px;
+    position: relative;
+    width: 335px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+}
+
+#name{
+    position: absolute;
+    height: 14px;
+    left: 50px;
+    top: 10px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    }
+
+#quantity{
+    position: absolute;
+    height: 18px;
+    left: 234px;
+    top: 10px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.plus{
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+    top: 2px;
+    width:22px;
+	height:22px;
+	background:#f2f2f2;
+	border-radius:20px;
+	
+	border:1px solid rgb(158, 158, 158, 0.5);
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    vertical-align: middle;
+
+    line-height: 21px;
+    color: rgb(113, 113, 113);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 3px;
+}

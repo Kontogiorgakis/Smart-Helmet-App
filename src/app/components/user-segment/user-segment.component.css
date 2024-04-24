@@ -1,0 +1,134 @@
+#menu{
+  z-index: 1;
+  position: absolute;
+  width: 201px;
+  height: 357px;
+  left: 8px;
+  top: 57px;
+}
+
+#triangle{
+  z-index: 1;
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #FFF1D4;
+  left: 1px;
+  top: -5px;
+  border-radius: 3px;
+}
+
+#rect{
+  position: absolute;
+  width: 198px;
+  height: 300px;
+  left: 0px;
+  top: 19px;
+  background: #FFF1D4;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*inside rekt*/
+#name{
+  position: absolute;
+  width: 118px;
+  height: 28px;
+  left: 22px;
+  top: 20px;
+
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+#row{
+  position: relative;
+  width: 150px;
+  height: 45px;
+  left: 11px;
+  top: 48px;
+  margin-bottom: 5px;
+}
+
+#image{
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  left: 15px;
+  top: 7px;
+}
+
+#place{
+  position: absolute;
+  width: 48px;
+  height: 19px;
+  left: 58px;
+  top: 13px;
+
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+#favorite{
+  position: absolute;
+  height: 28px;
+  left: 15px;
+  top: 9px;
+
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+#logOut{
+  position: absolute;
+  width: 91px;
+  height: 34px;
+  left: 22px;
+  top: 250px;
+
+  background: #CD4F4F;
+  border-radius: 10px;
+}
+
+#logText{
+  position: absolute;
+  width: 51px;
+  height: 19px;
+  left: 20px;
+  top: 7px;
+
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}

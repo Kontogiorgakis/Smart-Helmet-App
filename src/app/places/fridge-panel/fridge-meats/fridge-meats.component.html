@@ -1,0 +1,87 @@
+<app-fridge-topbar></app-fridge-topbar>
+<!--BreadCrump-->
+<div id="breadcrumb">
+    <img src="../../../assets/fridgePanel/Fridge.png" id="fridge" (click)="fridge()">
+    <div id="fridgeText">
+        Fridge > Meats
+    </div>
+</div>
+
+<!--Categories-->
+<div id="panel">
+    <div class="rows">
+        <div class="category">
+            <div class="productText">
+                Cow
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Cow.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Turkey
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Turkey.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Duck
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Duck.png" id="img">
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="category">
+            <div class="productText">
+                Lamb
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Lamb.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Pork
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Pork.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;" (click)="chickenRedirect()">
+            <div class="productText">
+                Chicken
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Chicken.png" id="img">
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="category">
+            <div class="productText">
+                Goat
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Goat.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Fish
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Fish.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Proccessed
+            </div>
+            <img src="../../../../assets/fridgePanel/meats/Proccessed.png" id="img">
+        </div>
+    </div>
+
+    <!--Voice Commands-->
+    <div id="voice">
+        Use voice commands in search to navigate through items
+    </div>
+</div>
+
+<app-fridge-chicken *ngIf="chicken"></app-fridge-chicken>

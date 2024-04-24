@@ -1,0 +1,84 @@
+<div id="container">
+  <!--Destinations-->
+  <div id="destinations" (click)="closeTab()">
+    <div id="current_location">
+      Konstantinidi 18, Heraklion
+    </div>
+    <div id="underloc">
+      <div id="weather">
+        <img src="../../assets/helmie/sun.png">
+        <div id="deg">{{temperature}}°</div>
+      </div>
+      <div id="profile">
+        Jason
+        <img src="../../assets/helmie/male.png" id="male">
+      </div>
+    </div>
+
+    <div id="where">
+      Where is your destination?
+    </div>
+
+    <div id="search_container">
+      <fa-icon [icon]="faMagnifyingGlass" id="glass"></fa-icon>
+      <input type="text" placeholder="Search location . . ." id="search" (input)="handleSearchInput()" />
+      <ul id="dropdown" *ngIf="showDropdown">
+        <div *ngFor="let location of filteredLocations" (click)="selectLocation(location)" id="addresses">{{ location }}</div>
+      </ul>
+      <img src="../../assets/helmie/go.png" id="go" (click)="searchLocation()" />
+    </div>
+
+
+  </div>
+
+  <!--Locations-->
+  <div id="locations">
+    <!--Location static-->
+    <div id="loc_div" (click)="openMaps()">
+      <div id="image">
+        <img src="../../assets/helmie/earth.png" id="image_loc">
+      </div>
+      <div id="textes">
+        <div id="basic_text">Maps</div>
+        <div id="under_text">Navigate through maps</div>
+      </div>
+    </div>
+
+    <!--Location static-->
+    <div id="loc_div">
+      <div id="image">
+        <img src="../../assets/helmie/motori.png" id="image_loc">
+      </div>
+      <div id="textes">
+        <div id="basic_text">My motorcycle</div>
+        <div id="under_text">Konstantinidi 19, Heraklion</div>
+      </div>
+    </div>
+
+    <!--Hotspots-->
+    <div id="hotpots" *ngFor="let hot of hotspot;">
+      <!--Location static-->
+      <div id="loc_div">
+        <div id="image">
+          <img src="../../assets/helmie/locations/{{hot.image}}" id="image_loc">
+        </div>
+        <div id="textes">
+          <div id="basic_text">{{hot.location}}</div>
+          <div id="under_text">{{hot.name}}</div>
+        </div>
+      </div>
+
+      <!--Location static
+      <div id="loc_div">
+        <div id="image">
+          <img src="../../assets/helmie/work.png" id="image_loc">
+        </div>
+        <div id="textes">
+          <div id="basic_text">Work</div>
+          <div id="under_text">Evans 56, Heraklion</div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+
+</div>

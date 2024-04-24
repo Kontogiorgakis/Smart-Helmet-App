@@ -1,0 +1,3 @@
+FOR ICONS : https://www.npmjs.com/package/@fortawesome/angular-fontawesome
+
+FOR HTTP: npm install @angular/http@latest

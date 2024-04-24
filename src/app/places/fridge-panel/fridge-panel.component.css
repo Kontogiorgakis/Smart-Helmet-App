@@ -1,0 +1,108 @@
+/*Categories*/
+#panel{
+    position: absolute;
+    width: 1080px;
+    height: 1773px;
+    left: 0px;
+    top: 147px;
+    background-color: aliceblue;
+}
+
+.rows{
+    position: relative;
+    width: 1021px;
+    height: 291px;
+    left: 28px;
+    top: 60px;
+    margin-bottom: 50px;
+}
+
+.category{
+    cursor: pointer;
+    position: absolute;
+    width: 321px;
+    height: 291px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3));
+    border-radius: 20px;
+}
+
+#img{
+    position: relative;
+    width: 321px;
+    height: 291px;
+    filter: brightness(96%);
+}
+
+.productText{
+    z-index: 1;
+    position: absolute;
+    width: 321px;
+    top:40%;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 55px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+}
+
+/*Voice*/
+#voice{
+    position: absolute;
+    height: 42px;
+    left: 55px;
+    top: 1500px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 38px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+/*bread*/
+#breadcrumb{
+    position: absolute;
+    width: 432px;
+    height: 77px;
+    left: 340px;
+    top: 39px;
+}
+
+#fridge{
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
+
+#fridgeText{
+    position: absolute;
+    width: 109.92px;
+    height: 38px;
+    left: 83px;
+    top: 22px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+
+}

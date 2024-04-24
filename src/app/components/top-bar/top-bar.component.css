@@ -1,0 +1,49 @@
+/*navigation bar main screen*/
+#navigation_bar_main{
+    position: absolute;
+    width: 375px;
+    height: 57px;
+    left: 0px;
+    top: 0px;
+    background: #594545;
+}
+
+/*navigation bar title*/
+#navigation_bar_title{
+    cursor: pointer;
+    position: absolute;
+    height: 36px;
+    left: 101px;
+    top: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/*back arrow*/
+#user_face{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 1.7em;
+    left: 19px;
+    top: 14px;
+    color: #FFFFFF;
+}
+
+/*notifications*/
+#bell{
+    position: absolute;
+    left: 330px;
+    right: 19px;
+    top: 14px;
+    bottom: 14px;
+    font-size: 1.7em;
+    color: #FFFFFF;   
+}

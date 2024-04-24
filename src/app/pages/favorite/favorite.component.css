@@ -1,0 +1,162 @@
+#list_frame{
+    position: absolute;
+    width: 375px;
+    height: 651px;
+    left: 0px;
+    top: 57px;
+    background-color: aliceblue;
+}
+
+
+#title{
+    position: absolute;
+    height: 28px;
+    left: 25px;
+    top: 15px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+#total_items{
+    position: absolute;
+    width: 98px;
+    height: 19px;
+    left: 252px;
+    top: 23px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #8C8C8C;
+}
+
+/*Items going*/
+#listing{
+    position: relative;
+    top:60px;
+    height: 560px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#item{
+    margin-top: 10px;
+    position: relative;
+    width: 375px;
+    height: 75px;
+    left: 0px;
+
+}
+
+/*Left Side*/
+#item_title{
+    position: absolute;
+    ;
+    height: 22px;
+    left: 25px;
+    top: 13px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#item_status{
+    position: absolute;
+    width: 130px;
+    height: 16px;
+    left: 25px;
+    top: 47px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #7c7c7c;
+}
+
+/*Right side*/
+#addItem{
+    position: absolute;
+    width: 92px;
+    height: 32px;
+    left: 202px;
+    top: 25px;
+
+    background: #594545;
+    border-radius: 10px;
+}
+
+#addItemText{
+    position: absolute;
+    width: 79px;
+    height: 11px;
+    left: 11px;
+    top: 11px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+
+#like{
+    position: absolute;
+    font-size: 24px;
+    left: 326px;
+    top: 25px;
+    color: #A61313;
+    filter:drop-shadow(0px 3px 8px rgb(109, 109, 109))
+}
+
+
+
+/*Line*/
+hr{
+    position: absolute;
+    width: 325px;
+    height: 0px;
+    left: 25px;
+    top: 75px;
+    border-width: 1px; 
+    border-color: rgba(222, 220, 220, 0.8);
+}
+
+
+
+
+
+

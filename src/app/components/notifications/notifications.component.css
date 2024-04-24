@@ -1,0 +1,99 @@
+#menu{
+    z-index: 1;
+    position: absolute;
+    width: 302px;
+    height: 238px;
+    left: 65px;
+    top: 57px;
+}
+
+  #triangle{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #FFF1D4;
+    left: 250px;
+    top: -5px;
+    border-radius: 3px;
+  }
+
+  #rect{
+    position: absolute;
+    width: 299px;
+    height: 210px;
+    left: 0px;
+    top: 19px;
+    background: #FFF1D4;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /*inside rekt*/
+  #row{
+    position: relative;
+    width: 299px;
+    height: 45px;
+    left: 0px;
+    top: 21px;
+
+    margin-bottom: 15px;
+  }
+
+  #nots{
+    position: absolute;
+    height: 19px;
+    left: 48px;
+    top: 13px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+
+  #icon{
+    position: absolute;
+    font-size: 23px;
+    left: 16px;
+    top: 10px;
+    color: #594545;
+  }
+
+  #addButton{
+    position: absolute;
+    width: 57px;
+    height: 22px;
+    left: 203px;
+    top: 11px;
+
+    background: #594545;
+    border-radius: 5px;
+  }
+
+  #addText{
+    position: absolute;
+    width: 27px;
+    height: 17px;
+    left: 15px;
+    top: 2px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+  }

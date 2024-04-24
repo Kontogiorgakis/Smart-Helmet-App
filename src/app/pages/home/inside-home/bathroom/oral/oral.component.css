@@ -1,0 +1,208 @@
+#product_segment{
+    position: absolute;
+    width: 371px;
+    height: 649px;
+    left: 0;
+    top: 0px;
+
+    background: rgba(119, 95, 95, 0.4);
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#product_text{
+    position: absolute;
+    width: 211px;
+    height: 54px;
+    left: 9px;
+    top: 12px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#close{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 337px;
+    top: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+#faX{
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    left:6px;
+    top: 1;
+
+}
+
+#item{
+    position: relative;
+    width: 355px;
+    height: 100px;
+    left: 8px;
+    top: 66px;
+
+    margin-bottom: 20px;
+
+    background: #FFF8EA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+#low{
+    position: absolute;
+    height: 15px;
+    left: 204px;
+    top: 20px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #A61313;
+}
+
+#image{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 7px;
+    top: 6px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+#item_text{
+    position: absolute;
+    height: 27px;
+    left: 103px;
+    top: 12px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #252525;
+}
+#counter{
+    position: absolute;
+    width: 68px;
+    height: 18px;
+    left: 103px;
+    top: 42px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #252525;
+}
+
+#cnt_input{
+    margin-left: 3px;
+    margin: 0.5px;
+    border: 0;
+    width: 10px;
+    font-size: 14px;
+    font-weight: 600 ;
+}
+
+a{
+    font-weight: 600 ; 
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#minimum_value{
+    position: absolute;
+    width: 189px;
+    height: 17px;
+    left: 103px;
+    top: 65px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #252525;
+}
+
+#add{
+    position: absolute;
+    width: 55px;
+    height: 24px;
+    left: 293px;
+    top: 58px;
+
+    background: #815B5B;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#add_text{
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    left: 13px;
+    top: 3px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#heart{
+    position: absolute;
+    font-size: 20px;
+    left: 328px;
+    top: 12px;
+    color: #f1efef;
+    filter:drop-shadow(0px 3px 8px rgb(109, 109, 109))
+}

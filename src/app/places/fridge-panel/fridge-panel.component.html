@@ -1,0 +1,98 @@
+<!--Fridge Panel Starter-->
+<app-fridge-topbar></app-fridge-topbar>
+<!--BreadCrump-->
+<div id="breadcrumb">
+    <img src="../../../assets/fridgePanel/Fridge.png" id="fridge">
+    <div id="fridgeText">
+        Fridge
+    </div>
+</div>
+
+<!--Categories-->
+<div id="panel">
+    <div class="rows">
+        <div class="category" (click)="meatsRedirect()">
+            <div class="productText">
+                Meats
+            </div>
+            <img src="../../../assets/fridgePanel/Meats.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Vegetables
+            </div>
+            <img src="../../../assets/fridgePanel/Vegies.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Dairy
+            </div>
+            <img src="../../../assets/fridgePanel/Dairy.png" id="img">
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="category" (click)="fruitsRedirect()">
+            <div class="productText">
+                Fruits
+            </div>
+            <img src="../../../assets/fridgePanel/Fruits.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;" (click)="sodaRedirect()">
+            <div class="productText">
+                Soda
+            </div>
+            <img src="../../../assets/fridgePanel/Soda.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Snacks
+            </div>
+            <img src="../../../assets/fridgePanel/Snacks.png" id="img">
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="category">
+            <div class="productText">
+                Bakery
+            </div>
+            <img src="../../../assets/fridgePanel/Backery.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Cold Cuts
+            </div>
+            <img src="../../../assets/fridgePanel/Cold Cuts.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Eggs
+            </div>
+            <img src="../../../assets/fridgePanel/Eggs.png" id="img">
+        </div>
+    </div>
+    <div class="rows">
+        <div class="category">
+            <div class="productText">
+                Juices
+            </div>
+            <img src="../../../assets/fridgePanel/Juices.png" id="img">
+        </div>
+    </div>
+
+    <!--Voice Commands-->
+    <div id="voice">
+        Use voice commands in search to navigate through items
+    </div>
+</div>
+
+<app-fridge-soda *ngIf="soda"></app-fridge-soda>
+
+

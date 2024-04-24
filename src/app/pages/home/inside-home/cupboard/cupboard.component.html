@@ -1,0 +1,52 @@
+<!--Cupboard-->
+
+    <!--Categories-->
+    <div id="categories">
+        <div id="up_sharp" (click)="snacksRedirect()">
+            <img src="../../../../../assets/cupboard/Snacks.jpg" id="image">
+            <div id="category_title">Snacks</div>
+            <div id="category_sub">5 products</div>
+        </div>
+        <div id="down_sharp">
+            <img src="../../../../../assets/cupboard/CoffeeTea.jpg" id="image">
+            <div id="category_title" style="font-size: 26px;">Coffee & Tea</div>
+            <div id="category_sub">7 categories</div>
+        </div>
+        <div id="up_sharp">
+            <img src="../../../../../assets/cupboard/Liquids.jpg" id="image">
+            <div id="category_title">Liquids</div>
+            <div id="category_sub">9 categories</div>
+        </div>
+        <div id="down_sharp">
+            <img src="../../../../../assets/cupboard/Bakery.jpg" id="image">
+            <div id="category_title">Bakery</div>
+            <div id="category_sub">9 categories</div>
+        </div>
+        <div id="up_sharp">
+            <img src="../../../../../assets/cupboard/Legumes.jpg" id="image">
+            <div id="category_title">Legumes</div>
+            <div id="category_sub">9 categories</div>
+        </div>
+        <div id="down_sharp">
+            <img src="../../../../../assets/cupboard/Sauces.png" id="image">
+            <div id="category_title">Sauces</div>
+            <div id="category_sub">9 categories</div>
+        </div>
+        <div id="up_sharp" (click)="spicesRedirect()">
+            <img src="../../../../../assets/cupboard/Spices.jpg" id="image">
+            <div id="category_title">Spices</div>
+            <div id="category_sub">9 categories</div></div>
+        <div id="down_sharp">
+            <img src="../../../../../assets/cupboard/Pasta.jpg" id="image">
+            <div id="category_title">Pasta</div>
+            <div id="category_sub">9 categories</div>
+        </div>
+        <div id="up_sharp">
+            <img src="../../../../../assets/cupboard/Argicultural.jpg" id="image">
+            <div id="category_title">Argicultural</div>
+            <div id="category_sub">9 categories</div>
+        </div>
+    </div>
+
+    <!--Interactive Products-->
+    <app-snacks *ngIf="snacks"></app-snacks>

@@ -1,0 +1,83 @@
+<div id="extras">
+    <div id="based">Based on the ingredients of your house.</div>
+    <fa-icon [icon]="faSliders" id="sliders"></fa-icon>
+
+    <!--Try Components-->
+    <div id="try">
+        <div id="recipe">
+            <img src="../../../assets/recipes/gnocchi.jpg" class="tryImage">
+            <div class="letsTry">Try It!</div>
+        </div>
+
+        <div id="recipe" style="left: 108px;">
+            <img src="../../../assets/recipes/garlic_lemon.jpg" class="tryImage">
+            <div class="letsTry">Try It!</div>
+        </div>
+
+        <div id="recipe" style="left: 191px;">
+            <img src="../../../assets/recipes/chicken_curry.jpg" class="tryImage">
+            <div class="letsTry">Try It!</div>
+        </div>
+
+        <div id="recipe" style="left: 274px;">
+            <img src="../../../assets/recipes/creamy_tortellini.jpg" class="tryImage">
+            <div class="letsTry">Try It!</div>
+        </div>
+    </div>
+
+    <!--Rest-->
+    <!--Search-->
+    <div id="search">
+        <input type="text" id="search_bar" placeholder="Search"> 
+        <fa-icon [icon]="faMagnifyingGlass" id="magnigying_glass"></fa-icon>
+        <fa-icon [icon]="faChevronRight" id="right"></fa-icon>
+    </div>
+
+    <!--More Recipes-->
+    <div id="more">
+        <div id="nav">
+            <div class="meal">Breakfast</div>
+            <div id="selected">Lunch</div>
+            <div class="meal" style="left:185px">Dinner</div>
+            <div class="meal" style="left:270px">Desserts</div>
+        </div>
+
+        <div id="mealImages">
+            <div id="mealFrame">
+                <div id="ingredients">6/6 Ingredients</div>
+                <div id="mealTitle">Creamy Chicken</div>
+                <fa-icon [icon]="faSmile" id="smile"></fa-icon>
+                <div id="difficulty">Easy</div>
+                <fa-icon [icon]="faClock" id="clock"></fa-icon>
+                <div id="time">30 Min</div>
+                <img src="../../../assets/recipes/creamy_ling.jpg" id="mealImage">
+            </div>
+            <div id="mealFrame" style="left:175px" (click)="redirect()">
+                <div id="ingredients">4/5 Ingredients</div>
+                <div id="mealTitle">Pork with Potatoes</div>
+                <fa-icon [icon]="faFaceMeh" id="smile"></fa-icon>
+                <div id="difficulty">Medium</div>
+                <fa-icon [icon]="faClock" id="clock"></fa-icon>
+                <div id="time">15 Min</div>
+                <img src="../../../assets/recipes/steak.jpg" id="mealImage"></div>
+            <div id="mealFrame" style="top:120px">
+                <div id="ingredients">9/9 Ingredients</div>
+                <div id="mealTitle">Moussaka</div>
+                <fa-icon [icon]="faFaceFrown" id="smile"></fa-icon>
+                <div id="difficulty">Difficult</div>
+                <fa-icon [icon]="faClock" id="clock"></fa-icon>
+                <div id="time">40 Min</div>
+                <img src="../../../assets/recipes/moussaka.jpeg" id="mealImage"></div>
+            <div id="mealFrame" style="top:120px;left:175px">
+                <div id="ingredients">4/4 Ingredients</div>
+                <div id="mealTitle">Penne with Avocado</div>
+                <fa-icon [icon]="faSmile" id="smile"></fa-icon>
+                <div id="difficulty">Easy</div>
+                <fa-icon [icon]="faClock" id="clock"></fa-icon>
+                <div id="time">20 Min</div>
+                <img src="../../../assets/recipes/penne.jpg" id="mealImage"></div>
+            </div>
+    </div>
+
+
+</div>

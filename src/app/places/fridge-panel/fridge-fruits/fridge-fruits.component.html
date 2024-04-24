@@ -1,0 +1,73 @@
+<app-fridge-topbar></app-fridge-topbar>
+<!--BreadCrump-->
+<div id="breadcrumb">
+    <img src="../../../assets/fridgePanel/Fridge.png" id="fridge" (click)="fridge()">
+    <div id="fridgeText">
+        Fridge > Fruits
+    </div>
+</div>
+
+<!--Categories-->
+<div id="panel">
+    <div class="rows">
+        <div class="category">
+            <div class="productText" style="font-size: 45px;">
+                Apples & Pears
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/apples.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Citrus
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/citrus.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Stone Fruits
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/stone.png" id="img">
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="category" (click)="tropicalRedirect()">
+            <div class="productText">
+                Tropical
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/tropical.png" id="img">
+        </div>
+
+        <div class="category" style="left: 350px;">
+            <div class="productText">
+                Berries
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/berries.png" id="img">
+        </div>
+
+        <div class="category" style="left: 700px;">
+            <div class="productText">
+                Melons
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/melons.png" id="img">
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="category">
+            <div class="productText">
+                Seasonal
+            </div>
+            <img src="../../../../assets/fridgePanel/fruits/winter.png" id="img">
+        </div>
+    </div>
+
+    <!--Voice Commands-->
+    <div id="voice">
+        Use voice commands in search to navigate through items
+    </div>
+</div>
+
+<app-fridge-tropical *ngIf="fruits"></app-fridge-tropical>

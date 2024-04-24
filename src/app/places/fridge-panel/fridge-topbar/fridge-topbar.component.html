@@ -1,0 +1,23 @@
+<!--Fridge Tob Bar-->
+<div id="topbar">
+    <div id="search">
+        <img src="../../../../assets/fridgePanel/Search.png" id="glass">
+        <div id="searchText">
+            Search item
+        </div>
+    </div>
+
+    <div id="pending" (click)="pendingItems()">
+        <div id="pendingText">
+            Pending Items
+        </div>
+    </div>
+
+    <div id="liked" (click)="likeRedirect()">
+        <img src="../../../../assets/fridgePanel/Like.png" id="heart">
+    </div>
+</div>
+
+<app-pending-items *ngIf="pending"></app-pending-items>
+<!--Liked Items-->
+<app-fridge-like *ngIf="like"></app-fridge-like>

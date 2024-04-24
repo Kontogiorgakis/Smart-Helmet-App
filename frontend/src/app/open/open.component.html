@@ -1,0 +1,143 @@
+<!--Back-->
+<div id="button_back" (click)="back()">
+  <img src="../../assets/helmie/back.png" id="back">
+</div>
+
+<!--Lemap-->
+<div id="container">
+  <div id="map" class="map"></div>
+</div>
+
+<!--Refocus-->
+<div id="refocusing" (click)="centerToOrigin()" *ngIf="refocus" >
+  <fa-icon [icon]="faArrowsToCircle" id="refocus_icon"></fa-icon>
+  <div id="refocus_text">Refocus</div>
+</div>
+
+<!--Origin Information
+<div id="informations" *ngIf="originInformation">
+  <div id="image">
+    <img src="../../assets/helmie/motori.png" id="image_loc">
+  </div>
+  <div id="textes">
+    <div id="basic_text">My motorcycle</div>
+    <div id="under_text">Konstantinidi 18, Heraklion</div>
+  </div>
+  <div id="close" (click)="closeOriginInformations()">
+    <img src="../../assets/helmie/close.png">
+  </div>
+</div>-->
+
+<!--Destination Information-->
+
+<div id="informations" *ngIf="destinationInformation">
+  <div id="image">
+    <img src="../../assets/helmie/route.png" id="image_loc" style="margin-top: 23px;">
+  </div>
+  <div id="three_textes">
+    <div id="streeter">
+      <div id="texter">
+        {{street}}
+      </div>
+    </div>
+    <div id="infos">
+      <div id="route">
+        <fa-icon [icon]="faRoute" id="icon_route"></fa-icon>
+        <div id="text_route">{{averageKilometer}} km</div>
+      </div>
+
+      <div id="time">
+        <fa-icon [icon]="faClock" id="icon_route"></fa-icon>
+        <div id="text_route">{{averageTime}} min</div>
+      </div>
+    </div>
+    <div id="buttons">
+      <div id="start">
+        <div id="start_text">
+          Start
+          <fa-icon [icon]="faLocationArrow" id="location_icon"></fa-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="add_custom">
+    <div id="plus_margin">
+      <fa-icon [icon]="faChevronDown" id="plus_icon" (click)="saveLocation()" *ngIf="chevronDown"></fa-icon>
+      <fa-icon [icon]="faChevronUp" id="plus_icon" (click)="saveLocation()" *ngIf="chevronUp"></fa-icon>
+    </div>
+  </div>
+  <div id="close" (click)="closeDestinationInformations()">
+    <img src="../../assets/helmie/close.png">
+  </div>
+  <div id="savers">
+    <div id="selecting">Select the type of location: </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('homie')" id="homie">
+          <img src="../../assets/helmie/house.png" class="centering">
+        </div>
+        <div class="nameIcon">Home</div>
+      </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('work')" id="work">
+          <img src="../../assets/helmie/work_mini.png" class="centering">
+        </div>
+        <div class="nameIcon">Work</div>
+      </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('market')" id="market">
+          <img src="../../assets/helmie/market.png" class="centering">
+        </div>
+        <div class="nameIcon">Market</div>
+      </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('bank')" id="bank">
+          <img src="../../assets/helmie/bank.png" class="centering">
+        </div>
+        <div class="nameIcon">Bank</div>
+      </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('gym')" id="gym">
+          <img src="../../assets/helmie/gym.png" class="centering">
+        </div>
+        <div class="nameIcon">Gym</div>
+      </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('school')" id="school">
+          <img src="../../assets/helmie/church.png" class="centering">
+        </div>
+        <div class="nameIcon">School</div>
+      </div>
+      <div class="grid-item"><div class="circlerOf" (click)="hotspot('workshop')" id="workshop">
+        <img src="../../assets/helmie/workshop.png" class="centering">
+      </div>
+      <div class="nameIcon" style="margin-left: -10px;">Workshop</div>
+    </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('grocery')" id="grocery">
+          <img src="../../assets/helmie/grocery.png" class="centering">
+        </div>
+        <div class="nameIcon" style="margin-left: -4px;">Grocery</div>
+      </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('cinema')" id="cinema">
+          <img src="../../assets/helmie/cinema.png" class="centering">
+        </div>
+        <div class="nameIcon" style="margin-left: -3px;">Cinema</div>
+    </div>
+      <div class="grid-item">
+        <div class="circlerOf" (click)="hotspot('hospital')" id="hospital">
+          <img src="../../assets/helmie/hospital.png" class="centering">
+        </div>
+        <div class="nameIcon" style="margin-left: -4px;">Hospital</div>
+      </div>
+    </div>
+
+    <!--Apply-->
+    <div id="apply" (click)="apply()">
+      <div id="apply_text">
+        Apply
+      </div>
+    </div>
+  </div>
+</div>

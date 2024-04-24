@@ -1,0 +1,68 @@
+<div id="recipe">
+    <div id="frameImage">
+        <img src="../../../../assets/recipes/steak.jpg" id="image">
+    </div>
+
+    <div id="rest">
+        <div id="title">Pork with Potatoes</div>
+        <div id="informations">
+            <div id="frameInfo">
+                <div id="number">514</div>
+                <div id="subtext">kcal</div>
+            </div>
+            <div id="frameInfo" style="left: 108px;">
+                <div id="number">250</div>
+                <div id="subtext" style="left: 12px;">grams</div>
+            </div>
+            <div id="frameInfo" style="left: 198px;">
+                <div id="number" style="left: 28px;">1</div>
+                <div id="subtext"style="left: 7px;">servings</div>
+            </div>
+            <div id="frameInfo" style="left: 287px;">
+                <div id="number" style="left: 22px;">45</div>
+                <div id="subtext" style="left: 7px;">minutes</div>
+            </div>
+        </div>
+
+        <div id="tags">
+            <div id="tagText">Lunch</div>
+            <div id="tagText" style="left: 120px;">Nutritional</div>
+            <fa-icon [icon]="faFaceMeh" id="face"></fa-icon>
+            <div id="tagText" style="left: 255px;">Medium</div>
+        </div>
+
+        <div id="ingredients">
+            <div id="ingredientsText">Ingredients</div>
+            <div id="items">4/5 Ingredients</div>
+
+            <div id="list">
+                <div id="row">
+                    <img src="../../../../assets/recipes/ingredients/pork.jpg" id="ingrImage">
+                    <div id="name">Pork Belly</div>
+                    <div id="quantity">0.380 kg</div>
+                </div>
+                <div id="row">
+                    <img src="../../../../assets/recipes/ingredients/potato.jpg" id="ingrImage">
+                    <div id="name">Potatoes</div>
+                    <div id="quantity">0.300 kg</div>
+                </div>
+                <div id="row">
+                    <img src="../../../../assets/recipes/ingredients/butter.jpg" id="ingrImage">
+                    <div id="name">Butter</div>
+                    <div id="quantity">0.020 kg</div>
+                </div>
+                <div id="row">
+                    <img src="../../../../assets/recipes/ingredients/garlic.jpg" id="ingrImage">
+                    <div id="name">Garlic</div>
+                    <div id="quantity">2 pc</div>
+                </div>
+                <div id="row">
+                    <img src="../../../../assets/recipes/ingredients/basil.jpg" id="ingrImage">
+                    <div id="name" style="color:brown">Basil</div>
+                    <span class="plus" (click)="addItem()">+</span>
+                    <div id="quantity" style="color:brown">0.010 kg</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

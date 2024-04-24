@@ -1,0 +1,47 @@
+<!--Helmie Start-->
+<div id="container">
+  <div id="helmie">
+    <img src="../assets/helmie/helmet.png">
+    helmie
+  </div>
+
+  <div id="animation">
+      <div id="hololens">
+          <div class="triangle"></div>
+      </div>
+      <!--Triangle Animations-->
+      <div id="hololens" style="transform: rotate(30deg);">
+        <div class="triangle" style=""></div>
+      </div>
+      <div id="hololens" style="transform: rotate(60deg);">
+        <div class="triangle" ></div>
+      </div>
+      <div id="hololens"  style="transform: rotate(90deg);">
+        <div class="triangle"></div>
+      </div>
+      <div id="hololens"  style="transform: rotate(-30deg);">
+        <div class="triangle"></div>
+      </div>
+      <div id="hololens"  style="transform: rotate(-60deg);">
+        <div class="triangle"></div>
+      </div>
+      <div id="hololens"  style="transform: rotate(-90deg);">
+        <div class="triangle"></div>
+      </div>
+      <div class="spin" *ngIf="spin"></div>
+      <img id="lens" src="../assets/helmie/hololens.png" (click)="startOculus()">
+    </div>
+
+  <div id="moto">
+    <img src="../assets/helmie/male.png">
+    <div id="moto_text">
+      Hey Jason, control your way!
+    </div>
+  </div>
+
+  <div id="pairing">
+    Pairing helmet
+  </div>
+</div>
+
+

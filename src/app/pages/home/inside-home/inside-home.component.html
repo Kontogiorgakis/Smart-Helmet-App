@@ -1,0 +1,24 @@
+<!--Inside Home Page-->
+<div id="insider">
+
+    <!--Slider-->
+    <div id="places_slider">
+        <div id="kitchen" (click)="fridge()" [ngStyle]="{'background-color': activeTab==='fridge'?'#bd9999':'transparent','box-shadow':activeTab==='fridge'?'0 3px 10px rgb(0 0 0 / 0.2)':'none'}">
+            <img src="../../../../assets/status/fridge.svg" id="fridge">
+        </div>
+        <div id="cupboard" (click)="cupboard()" [ngStyle]="{'background-color': activeTab==='cupboard'?'#bd9999':'transparent','box-shadow':activeTab==='cupboard'?'0 3px 10px rgb(0 0 0 / 0.2)':'none'}">
+            <img src="../../../../assets/status/cupboard.svg" id="cabinet" >
+        </div>
+        <div id="bathroom" (click)="bathroom()" [ngStyle]="{'background-color': activeTab==='bathroom'?'#bd9999':'transparent','box-shadow':activeTab==='bathroom'?'0 3px 10px rgb(0 0 0 / 0.2)':'none'}">
+            <img src="../../../../assets/status/bathroom.svg" id="bath">
+        </div>
+    </div>
+
+
+
+    <app-fridge *ngIf="activeTab==='fridge'"></app-fridge>
+    <app-cupboard *ngIf="activeTab==='cupboard'"></app-cupboard>
+    <app-bathroom *ngIf="activeTab==='bathroom'"></app-bathroom>
+
+
+</div>

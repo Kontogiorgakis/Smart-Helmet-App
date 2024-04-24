@@ -1,0 +1,15 @@
+<!--Thumb Buttons-->
+<div id="thumb_buttons">
+    <div #home_button id="home_button" (click)="homeToggle()">
+      <fa-icon [icon]="faKitchenSet" id="thumb_icons"></fa-icon>
+      <div id="home_text">Home</div>
+    </div>
+    <div #list_button id="list_button" (click)="listToggle()">
+      <fa-icon [icon]="faClipboardList" id="list"></fa-icon>
+      <div id="list_text">My List</div>
+    </div>
+    <div #extra_button id="extras_button" (click)="extrasToggle()">
+      <fa-icon [icon]="faMagnifyingGlass" id="thumb_icons"></fa-icon>
+      <div id="extras_text">Extras</div>
+    </div>
+</div>

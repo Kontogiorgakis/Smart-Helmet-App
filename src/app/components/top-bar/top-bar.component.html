@@ -1,0 +1,12 @@
+<!-- Navigation Bar-->
+<div id="navigation_bar_main">
+    <div id="backUser">
+        <fa-icon [icon]="faChevronLeft" id="user_face" (click)="back()" *ngIf="arrow"></fa-icon>
+        <fa-icon [icon]="faUser" id="user_face" (click)="user()" *ngIf="face"></fa-icon>
+    </div>
+    <div id="navigation_bar_title" (click)="goToList()">Shopping List</div>
+    <fa-icon [icon]="faBell" id="bell" (click)="notifications()"></fa-icon>
+</div>
+
+<app-user-segment *ngIf="toggleUser"></app-user-segment>
+<app-notifications *ngIf="toggleNotifications"></app-notifications>

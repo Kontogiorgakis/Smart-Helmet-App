@@ -1,0 +1,245 @@
+#container{
+  position: fixed;
+  background-color: #040213;
+  width: 414px;
+  height: 896px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#maps{
+  opacity:85%;
+  border-radius: 30px;
+  margin-top: -50px;
+  z-index: -2;
+}
+
+/*Informations*/
+#informations{
+  z-index: 1;
+  display: flex;
+  bottom: 25px;
+  left:15px;
+  position: absolute;
+  width: 384px;
+  height: 131px;
+  background-color: rgba(59, 57, 71, 0.9);
+  border-radius: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  animation: slideInBot 0.3s ease forwards;
+
+}
+
+#image{
+  width: 85px;
+  height: 85px;
+  margin-left: 16px;
+  margin-top: 22px;
+  border-radius: 50px;
+  background-color: rgb(217, 217, 217);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+}
+
+#image_loc{
+  margin-top: 18px;
+}
+
+#basic_text{
+  justify-self: flex-start;
+  text-align: left;
+  font-size: 28px;
+  color: white;
+
+  margin-top: 22px;
+  margin-left: 24px;
+}
+
+#under_text{
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+
+  margin-top: 7px;
+  margin-left: 21px;
+}
+
+#close{
+  position: absolute;
+  top: -10px;
+  left: 333px;
+}
+
+#button_back{
+  top:-100%;
+  z-index: 1;
+  border-radius: 50px;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: slideInTop 1s ease forwards;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes slideInTop {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 3%;
+  }
+}
+
+@keyframes slideInBot{
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 25px;
+  }
+}
+
+#back{
+  margin-top: 11px;
+}
+
+/*Destination informations*/
+#three_textes{
+  margin-top: -5px;
+}
+
+#streeter{
+  justify-self: flex-start;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 10px;
+  width: 225px;
+  height: 30px;
+}
+
+#texter{
+  color: white;
+  max-width: 230px;
+  font-size: 4vw;
+}
+
+
+#infos{
+  display: flex;
+}
+
+#route{
+  margin-top: 5px;
+  margin-left: 14px;
+  display: flex;
+}
+
+#icon_route{
+  color: white;
+  font-size: 22px;
+
+}
+
+#text_route{
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+#time{
+  margin-top: 5px;
+  margin-left: 20px;
+  display: flex;
+}
+
+#buttons{
+  display: flex;
+}
+
+#start{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+  width: 109px;
+  height: 30px;
+  background-color: white;
+  margin-top: 13px;
+  margin-left: 8px;
+  border-radius: 60px;
+}
+
+#start_text{
+  font-size: 24px;
+  margin-top: -4px;
+  margin-left: 3px;
+
+  background: linear-gradient(to left, purple, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#location_icon{
+  color: purple;
+  font-size: 20px;
+}
+
+#add_custom{
+  margin-top: 36px;
+  margin-right: 5px;
+  width: 46px;
+  height: 58px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px 30px 30px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+#plus_margin{
+  padding-top: 9px;
+  padding-right: 3px;
+}
+
+#plus_icon{
+  color: purple;
+  font-size: 25px;
+}
+
+
+
+
+
+/*Refocus*/
+#refocusing{
+  padding-top: 7px;
+  border-radius: 2px solid white;
+  top:-100%;
+  z-index: 1;
+  border-radius: 50px;
+  left:46%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: slideInTop 0.5s ease forwards;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+#refocus_text{
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  margin-top: 13px;
+  margin-left: -17px;
+
+  font-family: 'Open Sans', sans-serif; /* use a font that's easy to read */
+  line-height: 1.5; /* makes the text more spacious and easier to read */
+  letter-spacing: 0.05em; /* increases the spacing between letters */
+}
+
+#refocus_icon{
+  color: rgb(126, 8, 116);
+  font-size: 22px;
+  margin-left: 1px;
+}
