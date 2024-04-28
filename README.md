@@ -3,13 +3,11 @@
 
 Mobile-AR integration for smart helmets, enhancing safety and functionality with real-time data overlays. 
 
-## Description
-
-Our innovative kitchen management application, developed using Angular CLI and Node.js, revolutionizes household organization with intuitive interfaces for efficient inventory control and heightened productivity. Tested and refined during the HY469 course, this mobile application seamlessly integrates with various smart devices within a smart home environment located in ITE FORTH, including fridge panels, bathroom panels, and table panels.
-
 ## Overview
 
-Our application empowers users to effortlessly organize their shopping experiences by providing comprehensive insights into their household needs. It intelligently identifies products that require replenishment across different areas of the house, such as the kitchen and bathroom, while offering a curated smart list featuring real-time price updates from local vendors. Users can conveniently track purchased items and allocate them to designated spaces, such as the fridge, enhancing overall household efficiency. Moreover, the application offers an extensive library of recipes tailored to the ingredients available in the kitchen, inspiring culinary creativity and minimizing food waste. Additionally, users can stay informed about exclusive offers and monitor the status of household products, ensuring timely restocking and optimal utilization.
+Our innovative postgraduate project, developed during the HY569 course, introduces the Smart Helmet, aimed at enhancing safety and functionality through real-time data overlays. This project combines web application technology with AR (Augmented Reality) capabilities. The Smart Helmet assumes the role of AR glasses, allowing users to make decisions directly from their mobile devices. Tested and refined during the course, this solution offers intuitive interfaces for efficient safety management and heightened productivity.
+
+Our application comprises two distinct components: the web interface and the AR functionality. My focus was primarily on the web portion of the project. Leveraging the OpenStreetMap API, we obtained comprehensive mapping capabilities and access to diverse geographic data. Additionally, we integrated APIs for real-time user location tracking and live weather updates.  
 
 ## Key Features
 * **Real-Time Navigation**: Navigate with ease using a map display that provides live updates of your surroundings, ensuring efficient travel from point A to point B.
