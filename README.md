@@ -64,3 +64,6 @@ npm run dev
 ```
 
 **Do not forget**: mongod.exe (if on Windows) must be running for the Database to be used. 
+
+## Evaluation
+The heuristic evaluation of the application design was done in the context of the HY469 course by various users who, after our guidance, provided their conclusions.
